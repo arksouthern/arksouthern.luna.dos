@@ -1,0 +1,14 @@
+{
+  "displayName": "DOS Compatibility Layer",
+  "description": "Program capable of playing Flash media",
+  "author": {
+    "name": "Ark Southern"
+  },
+  "name": "@arksouthern/luna.dos",
+  "version": "1.0.0",
+  "dependencies": {
+    "emulators": "^8.3.9",
+    "js-dos": "^8.0.0"
+  },
+  "icon": "/src/assets/shell32/7.ico"
+}
