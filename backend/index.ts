@@ -15,7 +15,7 @@ export const any = {
     }
   },
   async fileDosDirectRead(req: FastifyRequest, res: FastifyReply) {
-    const bundlePath = `${req.url.split("/fileDosDirectRead")[1]}`;
+    const bundlePath = `${req.url.split("/fileDosDirectRead/")[1]}`;
     try {
       const buffer = await readFile(bundlePath);
       res.header("Content-Type", "application/zip");
