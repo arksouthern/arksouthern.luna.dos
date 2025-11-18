@@ -68,7 +68,7 @@ export default function DosApp(props: App) {
           </div>
         </div>
       </PropertiesDlg>
-      <About icon={"/src/assets/shell32/7.ico"} title={
+      <About progId="@arksouthern/luna.dos" license={{as: "full", title: "MIT"}} icon={"/src/assets/shell32/7.ico"} title={
         <>
           <A.TitleText class="flex-1 pointer-events-none pr-1 tracking-[.032rem] overflow-hidden whitespace-nowrap text-ellipsis">
             About DOS Compatibility Layer
@@ -78,10 +78,11 @@ export default function DosApp(props: App) {
       }>
         DOSBox emulation for Luna OS <br />
         Version 0.1.0 <br />
-        Arkansas Soft Construction <br />
+        Arkansas Soft Construction, Inc. <br />
         <br />
-        This product is licensed under the terms of the MIT <br />
-        License Agreement.
+        Portions of this software are under the license of<br />
+        DOSBox &amp; JS-DOS<br />
+        <br />
       </About>
       <A.TerminalExe onKeyDown={(e) => {
         if (!e.altKey) return;
